@@ -4,5 +4,6 @@ Chinook practise SQL database
 \l list databases
 \c switch database
 \i install or intialise
+\dt display tables
 
 -d specifiy which data base
