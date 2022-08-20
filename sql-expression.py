@@ -77,7 +77,8 @@ with db.connect() as connection:
     # "Queen" from the "Track" table
     # cursor.execute(
     # 'SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"])
-    select_query = track_table.select().where(track_table.c.Composer == "Queen")
+    select_query = track_table.select().where(
+        track_table.c.Composer == "Queen")
 
     results = connection.execute(select_query)
     for result in results:
